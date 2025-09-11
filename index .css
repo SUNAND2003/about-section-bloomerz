@@ -521,23 +521,34 @@ overflow: hidden;
 
   /* ABOUT US */
   .about-wrapper {
-    flex-direction: column;
+    flex-direction:column-reverse;
     align-items: center;
-    text-align: center;
-    gap: 30px;
+    text-align: justify;
+    font-size: 18px;
   }
   .about-text {
-    padding: 0 15px;
+    padding: 0 0px;
   }
-  .about-text h2,
+  .about-text h2{
+      padding-left: 0;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 450px;
+  }
   .about-text p {
     padding-left: 0;
     text-align: center;
+    align-items: center;
+    font-size: 23px;
+    position: relative;
+    bottom: 60px;
   }
   .about-images img {
     max-width: 320px;
     width: 100%;
     height: auto;
+    padding-left: 250px;
   }
   .about-stats {
     flex-wrap: wrap;
@@ -552,29 +563,48 @@ overflow: hidden;
     text-align: center;
     gap: 30px;
   }
-  .vm-bgleft img,
+  .vm-bgleft img{
+     max-width: 400px;
+    margin: 0 auto;
+    position: static;
+  }
   .vm-bgright img {
-    max-width: 260px;
+    max-width: 550px;
     margin: 0 auto;
     position: static;
   }
   .vm-content {
     padding: 0 20px;
   }
-  .vm-text h2,
+  .vm-text h2{
+    padding-left: 10px; 
+    left: 10px;
+    bottom: 0;
+    font-size: 1.6em;
+    text-align: center;
+  }
   .vm-text1 h2 {
-    padding-left: 0;
+    padding-left: 0px;
     left: 0;
     bottom: 0;
     font-size: 1.6em;
     text-align: center;
   }
-  .vm-text p,
+  .vm-text p{
+       padding-left: 0px;
+    left: 20px;
+    font-size: 1em;
+    text-align: justify;
+    align-items:center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
   .vm-text1 p {
-    padding-left: 0;
+    padding-left: 0px;
     left: 0;
     font-size: 1em;
-    text-align: center;
+    text-align: justify;
+    align-items:center;
     max-width: 500px;
     margin: 0 auto;
   }
@@ -594,7 +624,7 @@ overflow: hidden;
 
   /* TIMELINE */
   .timeline::after {
-    left: 20px; /* move line to left */
+    left: 0px; /* move line to left */
   }
   .timeline-item {
     width: 100%;
@@ -603,7 +633,7 @@ overflow: hidden;
     margin-bottom: 30px;
   }
   .timeline-item::before {
-    left: 10px;
+    left: -10px;
     right: auto;
   }
   .timeline-item.right {
@@ -619,7 +649,7 @@ overflow: hidden;
   }
   /* ABOUT US */
   .about-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     gap: 30px;
@@ -629,19 +659,23 @@ overflow: hidden;
   }
   .about-text h2{
     font-size: 1;
+    padding-top: 30px;
   }
   .about-text p {
     padding-left: 0;
     text-align:center;
-    font-size: 15px;
+    font-size: 16px;
+    position: relative;
+    bottom: 100px;
+
   }
   .about-images img {
     max-width: 300px;
     width: 100%;
     height: auto;
     position: relative;
-    left: 150px;
-    bottom: 100px;
+    left: 0px;
+    
   }
   .about-stats {
     flex-wrap: wrap;
@@ -660,29 +694,46 @@ overflow: hidden;
     text-align: center;
     gap: 30px;
   }
-  .vm-bgleft img,
+  .vm-bgleft img{
+       max-width: 360px;
+    margin: 0 auto;
+    position: static;
+  }
   .vm-bgright img {
-    max-width: 360px;
+    max-width: 460px;
     margin: 0 auto;
     position: static;
   }
   .vm-content {
     padding: 0 20px;
   }
-  .vm-text h2,
-  .vm-text1 h2 {
-    padding-left: 0;
+  .vm-text h2{
+       padding-left: 0;
     left: 0;
     bottom: 0;
     font-size: 1.6em;
     text-align: left;
   }
-  .vm-text p,
-  .vm-text1 p {
-    padding-left: 0;
+  .vm-text1 h2 {
+    padding-left: 0px;
+    left: 0px;
+    bottom: 0;
+    font-size: 1.6em;
+    text-align: left;
+  }
+  .vm-text p{
+       padding-left: 0;
     left: 0;
     font-size: 1em;
     text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .vm-text1 p {
+    padding-right: 50px;
+    right:100px;
+    font-size: 1em;
+    text-align: justify;
     max-width: 500px;
     margin: 0 auto;
   }
@@ -706,12 +757,12 @@ overflow: hidden;
 
   /* TIMELINE */
   .timeline::after {
-    left: 15px;
+    left: 0px;
   }
   .timeline-item {
-    padding-left: 50px;
+    padding-left: 30px;
   }
   .timeline-item::before {
-    left: 0;
+    left: -10px;
   }
 }
