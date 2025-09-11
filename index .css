@@ -741,6 +741,7 @@ overflow: hidden;
   /* CORE VALUES */
   .values-grid {
     grid-template-columns: 1fr;
+    padding-right: 20px;
   }
   .value-card {
     padding: 20px 15px;
@@ -759,6 +760,7 @@ overflow: hidden;
   /* TIMELINE */
   .timeline::after {
     left: 0px;
+    
   }
   .timeline-item {
     padding-left: 30px;
@@ -941,7 +943,7 @@ overflow: hidden;
   .about-text h2{
   font-size: 40px;
     padding-top: 100px;
-    padding-right: 10px;
+    padding-right: -15px;
   }
   .about-text p {
     padding-left: 0;
@@ -979,7 +981,7 @@ overflow: hidden;
        max-width: 320px;
     margin: 0 auto;
     position: static;
-    padding-right:60px ;
+    padding-right:30px ;
     
   }
   .vm-bgright img {
@@ -994,7 +996,7 @@ overflow: hidden;
   }
   .vm-text h2{
        padding-left: 0;
-    left: 0;
+    left:-5px;
     bottom: 0;
     font-size: 1.6em;
     text-align: left;
