@@ -703,6 +703,7 @@ overflow: hidden;
     max-width: 460px;
     margin: 0 auto;
     position: static;
+    width: 320px;
   }
   .vm-content {
     padding: 0 20px;
@@ -743,6 +744,147 @@ overflow: hidden;
   }
   .value-card {
     padding: 20px 15px;
+  }
+  .value-card .icon img {
+    width: 45px;
+    height: 45px;
+  }
+  .value-card h3 {
+    font-size: 1.2em;
+  }
+  .value-card p {
+    font-size: 0.95em;
+  }
+
+  /* TIMELINE */
+  .timeline::after {
+    left: 0px;
+  }
+  .timeline-item {
+    padding-left: 30px;
+  }
+  .timeline-item::before {
+    left: -10px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ---------- Extra Small Devices (≤ 350px) ---------- */
+@media (max-width: 350px) {
+  body {
+    font-size: 0.8em;
+    
+  }
+
+  /* ABOUT US */
+  .about-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: justify;
+    gap: 1px;
+    
+  }
+  .about-text {
+    padding: 0 35px;
+  
+  }
+  .about-text h2{
+  font-size: 40px;
+    padding-top: 100px;
+    padding-right: 70px;
+  }
+  .about-text p {
+    padding-left: 0;
+    text-align:center;
+    font-size: 12px;
+    position: relative;
+    bottom: 150px;
+    right: 30px;
+
+  }
+  .about-images img {
+    max-width: 250px;
+    width: 80%;
+    height: auto;
+    padding-left: 170px;
+  }
+  .about-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size:9px;
+    position: relative;
+    bottom: 100px;
+    left: 40px;
+  }
+
+    /* VISION & MISSION */
+  .vm-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .vm-bgleft img{
+       max-width: 320px;
+    margin: 0 auto;
+    position: static;
+    padding-right:60px ;
+    
+  }
+  .vm-bgright img {
+    max-width: 1000%;
+    margin: 0 auto;
+    position: relative;
+    left: -20px;
+    width: 300px;
+  }
+  .vm-content {
+    padding: 0 20px;
+  }
+  .vm-text h2{
+       padding-left: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 1.6em;
+    text-align: left;
+  }
+  .vm-text1 h2 {
+    padding-left: 0px;
+    left: -30px;
+    bottom: 0;
+    font-size: 1.6em;
+    text-align: left;
+  }
+  .vm-text p{
+       padding-left: 0;
+    left: 0;
+    font-size: 1em;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .vm-text1 p {
+    padding-right: 50px;
+    left:-25px;
+    font-size: 1em;
+    text-align: justify;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  /* CORE VALUES */
+  .values-grid {
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+  }
+  .value-card {
+    padding: 30px 10px;
   }
   .value-card .icon img {
     width: 45px;
